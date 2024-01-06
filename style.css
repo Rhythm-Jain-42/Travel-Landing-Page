@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .logo h1{
+    color: white;
+    font-size: 2rem;
+}
+
+nav .links{
+    margin-top: 10px;
+}
+
+nav .links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav .links a::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(to right, rgb(62,62,233), rgb(211,105,211), rgb(175,50,175));
+    transition: 0.24 linear;
+}
+
+nav .links a:hover::before{
+    width: 100%;
+}
+
+/* Section Starts */
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+section .content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .heading{
+    width: 40%;
+    color: white;
+}
+
+.content .heading h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.content .heading p{
+    font-size: 1rem;
+}
+
+.content .heading .buttons{
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.heading .buttons button{
+    width: 180px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    border-radius: 20px
+}
+
+.buttons button:nth-child(1){
+    background: linear-gradient(to right, rgb(62,62,233), rgb(211,105,211), rgb(175,50,175));
+}
+.buttons button:nth-child(2){
+    background: linear-gradient(to right, rgb(46,46,185), rgb(105,33,105), rgb(255,0,255));
+}
+
+.buttons button:hover{
+    scale: 0.95;
+}
+
+section .content .image img{
+    width: 500px;
+}
